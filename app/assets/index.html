@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test dev front</title>
+    <link rel="stylesheet" href="/test/public/app.css">
+    <script src="/test/public/app.js"></script>
+    <script>require('initialize');</script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+<!-- NAVBAR
+================================================== -->
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" /></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Découvrir</a></li>
+            <li><a href="#sejourner">Séjourner</a></li>
+            <li><a href="#sedivertir">Se divertir</a></li>
+            <li><a href="#pratique">Pratique</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><img src="img/calendar.png" /></a></li>
+            <li><a href="#"><img src="img/clock.png" /></a></li>
+            <li><a href="#"><img src="img/basket.png" /></a></li>
+            <li><a href="#" id="search_action"><img src="img/loupe.png" /></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div id="search" class="hidden_search">
+      <div class="wrap_search">
+        <div class="close"><span>X</span></div>
+        <h3>Recherchez</h3>
+        <input type="text" value="" name="input_search" id="input_search" placeholder="Un lieu, un évènement, une activité..." />
+        <input type="submit" name="submit_search" value="OK">
+      </div>
+    </div>
+
+
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/slider1.jpg');"></div>
+                <div class="carousel-caption">
+
+                <span></span>
+
+                <object data="img/logo_fakecity.svg"
+                    width="100"
+                    height="100"
+                    type="image/svg+xml">               
+                </object> 
+                    <h2>la mystérieuse</h2>
+                    <p>Découvrez le patrimoine de Fakecity</p>
+
+                    <div class="arrow"><a href="#agenda"><img src="img/arrow.png" alt="aller vers le bas" title="aller vers le bas" /></a>
+                </div>
+                </div>
+            </div>
+            <!--
+            <div class="item">
+                <div class="fill" style="background-image:url('img/slider2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            -->
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+    <div id="agenda" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <img src="img/calendar.png" />
+            <h4>Agenda</h4>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <img src="img/festival_agenda.jpg" alt="...">
+              <div class="caption">
+                <h3>Festival Grelin</h3>
+                <p class="RubikLight">9, 10 et 11 septembre 2016 - Fakecity</p>
+                <p class="RubikLight uppercase">Concerts et festivals</p>
+                <p>6e édition du Festival Grelin à Fakecity du vendredi 9 au dimanche 11 septembre 2016, le foyer rural de Fakecity propose un festival destiné au jeune public, avec des spectacles, animations théâtrales, déguisements, ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <img src="img/theatre_agenda.jpg" alt="...">
+              <div class="caption">
+                <h3>Festival Grelin</h3>
+                <p class="RubikLight">9, 10 et 11 septembre 2016 - Fakecity</p>
+                <p class="RubikLight uppercase">Concerts et festivals</p>
+                <p>6e édition du Festival Grelin à Fakecity du vendredi 9 au dimanche 11 septembre 2016, le foyer rural de Fakecity propose un festival destiné au jeune public, avec des spectacles, animations théâtrales, déguisements, ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <img src="img/stage_agenda.jpg" alt="...">
+              <div class="caption">
+                <h3>Festival Grelin</h3>
+                <p class="RubikLight">9, 10 et 11 septembre 2016 - Fakecity</p>
+                <p class="RubikLight uppercase">Concerts et festivals</p>
+                <p>6e édition du Festival Grelin à Fakecity du vendredi 9 au dimanche 11 septembre 2016, le foyer rural de Fakecity propose un festival destiné au jeune public, avec des spectacles, animations théâtrales, déguisements, ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="toutlagenda">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <p><a href="#" class="button">Tout l'agenda</a></p> 
+          </div>
+        </div>         
+    </div>
+
+
+
+    <div id="bonsplan" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <object data="img/ampoule.svg"
+                  width="60"
+                  height="60"
+                  type="image/svg+xml">               
+              </object>
+            <h4>Bons Plans</h4>
+          </div>
+        </div>   
+        <div class="row" id="mainbloc_bonsplan">
+          <div class="col-md-6 col-sm-6 col-xs-12"> 
+            <div id="mainbloc_bonsplan1">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <h4>Logez-vous !</h4>
+                  <p><img src="img/logezvous.jpg" alt="..." class="img-circle"></p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <p><strong>Dormez dans un tipi !</strong></p>
+                  <p>à l’asinerie d’En Manaou</p>
+                  <p>Seul ou entre amis, vous pouvez dormir dans des yourtes, tipis et roulottes, un coin grillade, des sanitaires écolos, toilettes sèches, douches solaires, salle commune avec frigos, gazinière... Les enfants pourront le matin donner à manger aux animaux de la ferme, les ânes vous attendent pour des balades dans les bois ou en attelage.</p>
+                  <p><a href="#" class="button">En savoir plus</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div id="mainbloc_bonsplan2">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <h4>Savourez !</h4>
+                  <p><img src="img/savourez.jpg" alt="..." class="img-circle"></p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <p><strong>Mangez local !</strong></p>
+                  <p>à La Croisée des Saveurs</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .</p>
+                  <p><a href="#" class="button">En savoir plus</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12" id="bloc1_bonsplan"> 
+          <object data="img/billetterie.svg"
+                  width="100"
+                  height="100"
+                  type="image/svg+xml">               
+              </object>
+            <p>Profitez de -20% sur notre billetterie !</p>
+          </div>
+          <div class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12" id="bloc2_bonsplan">
+          <object data="img/famille.svg"
+                  width="100"
+                  height="100"
+                  type="image/svg+xml">               
+              </object>          
+            <p>Découvrez nos séjours spécial familles !</p>
+          </div>
+        </div> 
+        <div class="row" id="touslesbonsplan">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <p><a href="#">Tous les bons plans</a></p> 
+          </div>
+        </div>  
+    </div>
+
+
+
+       
+    <div id="prepare_your_stay" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h4>Préparez votre séjour</h4>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="circle">
+              <object data="img/brochures.svg"
+                  width="100"
+                  height="100"
+                  type="image/svg+xml">               
+              </object>
+            </div>
+              <h5>Brochures</h5>
+              <p>Retrouvez toutes nos brochures téléchargeables en un clic !</p>            
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="circle">
+              <object data="img/voiture.svg"
+                  width="100"
+                  height="100"
+                  type="image/svg+xml">               
+              </object>
+            </div>
+              <h5>Comment venir</h5>
+              <p>Tous les chemins mènent à Fakecity.</p>            
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="circle">
+              <object data="img/carte_interactive.svg"
+                  width="100"
+                  height="100"
+                  type="image/svg+xml">               
+              </object>
+            </div>
+              <h5>Cartes interactive</h5>
+              <p>Trouvez la destination qui vous ressemble.</p>            
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="circle">
+              <object data="img/enveloppe.svg"
+                  width="100"
+                  height="100"
+                  type="image/svg+xml">               
+              </object>
+            </div>
+              <h5>Nous contacter</h5>
+              <p>Une question ? Besoin d’un conseil ? Contactez-nous !</p>            
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="whats_new" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h4>Quoi de neuf à Fakecity ?</h4>
+          </div>
+        </div>    
+        <div class="row">
+          <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12">
+            <h5>Nouveau musée !</h5> 
+            <p>Découvrez le "Coin Histoire de Saint-Caprais" avec son exposition permanente de divers objets qui vont de la préhistoire à nos jours, de cartes, de photos et divers documents, qui vous transporteront dans l'Histoire de ce petit Hameau.</p>
+          </div>
+          <div class="col-md-2 col-md-offset-2 col-sm-12 col-xs-12">
+            <h5>Toulouse partenaire de save & garonne !</h5> 
+            <p>Enfin ! L’office du tourisme de Toulouse s’associe à celle de Save & Garonne pour pouvoir profiter des nombreuses richesses que se partagent les deux grands territoirs.</p>
+          </div>
+          <div class="col-md-2 col-md-offset-2 col-sm-12 col-xs-12">
+            <h5>Nouveaux locaux de l’office du tourisme</h5> 
+            <p>Afin de vous proposer le meilleur accueil, l’office du tourisme de Grenade a déménagé dans de nouveaux locaux plus spacieux et en pleine rue Victor Hugo !</p>
+          </div>
+        </div> 
+        <div class="row" id="all_news">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <p><a href="#">Toutes les actualités</a></p> 
+          </div>
+        </div>  
+    </div>
+
+
+
+    <div id="follow_us" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h4>Suivez-nous</h4>
+          </div>
+        </div>    
+        <div class="row" id="follow_us_grid">
+          <div class="col-md-4 col-sm-12 col-xs-12 ">
+            <div class="grid">
+              <figure class="effect-ming">
+                <img src="img/instagram.jpg" alt="img09"/>
+                <figcaption>
+                  <h2><img src="img/pinterest_icon.png" /></h2>
+                  <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                  <a href="#">View more</a>
+                </figcaption>     
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="grid">
+              <figure class="effect-ming">
+                <img src="img/facebook.jpg" alt="img09"/>
+                <figcaption>
+                  <h2>Funny <span>Ming</span></h2>
+                  <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                  <a href="#">View more</a>
+                </figcaption>     
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="grid">
+              <figure class="effect-ming">
+                <img src="img/youtube.jpg" alt="img09"/>
+                <figcaption>
+                  <h2>Funny <span>Ming</span></h2>
+                  <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                  <a href="#">View more</a>
+                </figcaption>     
+              </figure>
+            </div>
+          </div>
+        </div>    
+    </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <p><a href="#">Nous contacter</a></p> 
+            </div>
+          </div>
+        </div>
+
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        // slider parameters
+        $('.carousel').carousel({
+            interval: 5000, //changes the speed
+            pause: "hover"
+        });
+
+        // search parameters
+        $('#search_action').on('click', function(e) {
+          e.preventDefault();
+          $('#search').removeClass('hidden_search');
+        });
+
+        $('.wrap_search .close').on('click', function(e) {
+          e.preventDefault();
+          $('#search').addClass('hidden_search');
+        });
+
+        $('#input_search').on('focusin', function() {
+          $('#input_search').removeAttr('placeholder');
+        });
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+
+
+      });
+    </script>
+  </body>
+</html>
