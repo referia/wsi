@@ -3,7 +3,7 @@ $white: #ffffff;
 $brown: #8e6c51;
 $brown2: #d4915a;
 $blackgrey: #323232;
-$lagoon: #1dbbae;
+$lagoon: #1dbbad;
 $lightgrey: #ededed;
 $orange: #d4915a;
 $rose: #d4488a;
@@ -201,7 +201,7 @@ body {
     bottom:20px;
     position:absolute;
     text-align:center;
-    width:100%;
+    width:97%;
     cursor:pointer;
     height:150px;
     img {
@@ -211,9 +211,91 @@ body {
     }
   }
 
+  .slidercircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    padding:20px;
+    text-align: center;
+    background: $white;
+    position:absolute;
+    color: $blackgrey;
+    opacity:0.8;
+    font-size:14px;
+    z-index:5000000;
+    p {
+      line-height:16px !important;
+      font-family: "RubikLight";
+      font-size:13px;
+    }
+    h4 {
+      color: $lagoon;
+      text-transform:uppercase;
+      font-size:14px;
+    }
+    div {
+      position:absolute;
+      right:10px;
+      top:25px;
+      background-color: $blackgrey;
+      color: $white;
+      padding:0px 5px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      height:30px;
+      line-height:30px;
+      cursor:pointer;
+    }
+    a {
+      background-color: $lagoon;
+      padding: 3px 10px 3px 10px;
+      text-transform:none;
+      color: $white;
+      text-align:center;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      font-family: "RubikLight";
+      border: 1px solid $lagoon;
 
+      &:hover {
+        text-decoration:none;
+        background-color: $white;
+        color: $lagoon;
+      }
+    }
+    // a::after {
+    //   content: url('img/picto.png');
+    // }
+  }
 
-
+  .marqueur1 {
+    position:absolute;
+    left:15%;
+    top:10%;
+    cursor:pointer;
+  }
+  #circle1 {
+    position:absolute;
+    left:10%;
+    top:6%;      
+  }
+  .marqueur2 {
+    position:absolute;
+    left:10%;
+    top:60%;
+    cursor:pointer;
+  }
+  #circle2 {
+    position:absolute;
+    left:5%;
+    top:50%;      
+  }  
+  .buble_hidden {
+    display:none;
+  }
 
 
 
@@ -303,14 +385,21 @@ body {
         margin:40px;
         strong {
           font-size:22px;
+          font-family:"RubikLight";
+        }
+        .light {
+          font-family:"RubikLight";
+          font-size:17px;
         }
         .img-circle {
           width:250px;
         }
         h4 {
           font-family: "Zooja";
-          font-size:30px;
+          font-size:45px;
           padding-top:0px;
+          padding-bottom:20px;
+          text-transform: none;
         }
         a.button {
           background-color: $lagoon;
@@ -343,6 +432,8 @@ body {
       object {
         margin-top: -100px;
         color: $lagoon;
+        z-index: -1;
+        position: relative;
       }
     }
     #bloc2_bonsplan {
@@ -354,6 +445,8 @@ body {
       object {
         margin-top: -100px;
         color: $lagoon;
+        z-index: -1;
+        position: relative;
       }
     }
     #touslesbonsplan {
@@ -391,7 +484,7 @@ body {
     color: $white;
     h4 {
       font-family: "Zooja";
-      font-size:50px;
+      font-size:60px;
       padding-top: 30px;
       padding-bottom:50px;
     }
@@ -406,6 +499,7 @@ body {
       margin-right:auto;
       font-size:16px;
       font-weight:300;
+      min-height:80px;
     }
     svg {
       color: $white;
@@ -438,11 +532,14 @@ body {
       font-size:25px;
       font-family: "Rubik-Regular";
     }
+    p {
+      line-height:1.8;
+    }
     #all_news {
       padding-top:40px;
       padding-bottom:40px;
     }
-    a {
+    a.button {
       background-color: $white;
       padding: 15px 50px 15px 50px;
       text-transform:uppercase;
@@ -676,4 +773,16 @@ body {
 
 
 
-
+@media screen and (max-width: 1000px) {
+  .navbar-right { display:none;}
+  .navbar-nav {
+    background-color:$white;
+    z-index:500000;
+    position:relative;
+  }
+  #navbar  {
+    padding-top:0px !important;
+    width: 300px;
+    float:right;
+  }
+}
