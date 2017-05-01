@@ -591,9 +591,19 @@ body {
       }
 
       figure.effect-ming h2 {
-        margin: 8% 0 10px 0;
+        /*margin: 8% 0 10px 0;*/
         -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
+        text-align:center;
+        position:relative;
+        margin-left: auto;
+        margin-right:auto;
+        img {
+          text-align:center;
+          position:relative;
+          margin-left: auto;
+          margin-right:auto;         
+        }
       }
 
       figure.effect-ming p {
